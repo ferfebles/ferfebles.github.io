@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-I write some technical entries when I found something interesting.
+In my work, I write code to manage 2K servers, 60K desktops and 450K users over 900 sites. Here I write some technical entries when I found something interesting.
 
-You can see some of my projects in my [github page](https://github.com/ferfebles)
+Sometimes I publish personal projects on my [github page](https://github.com/ferfebles).
 
 I wrote some older posts [here](https://testandset.wordpress.com/)
