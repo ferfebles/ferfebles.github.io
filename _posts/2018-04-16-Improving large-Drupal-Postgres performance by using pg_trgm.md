@@ -63,4 +63,4 @@ After this small change, the ILIKE selects dropped from 200-300ms to 20-30ms. As
 
 I would like to have some more time to try to make our app more performant (calls to external web services and trying to enable caches mainly), but we have other projects in the queue so it will have to wait.
 
-I was very happy with how we solved the problem: some days measuring and then just one small change with a big impact. I felt like a performance sniper (sometimes you can hear the Gatlin guns when some groups tackle performance problems :-).
+I was very happy with how we solved the problem: some days measuring and then just one small change with a big impact. I felt like a performance sniper (sometimes you can hear the Gatling guns when some groups tackle performance problems :-).
