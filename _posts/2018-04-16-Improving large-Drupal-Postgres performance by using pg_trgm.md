@@ -6,7 +6,7 @@ If you want to speedup your Drupal and have a big 'url_alias' table (more than 1
 CREATE EXTENSION pg_trgm;
 CREATE INDEX url_alias__alias_trgm_gist_idx ON url_alias USING gist (alias gist_trgm_ops);
 CREATE INDEX url_alias__source_trgm_gist_idx ON url_alias USING gist (source gist_trgm_ops);
-ANALIZE url_alias;
+ANALYZE url_alias;
 ```
 
 ---\
@@ -56,7 +56,7 @@ Finally, the solution was:
 CREATE EXTENSION pg_trgm;
 CREATE INDEX url_alias__alias_trgm_gist_idx ON url_alias USING gist (alias gist_trgm_ops);
 CREATE INDEX url_alias__source_trgm_gist_idx ON url_alias USING gist (source gist_trgm_ops);
-ANALIZE url_alias;
+ANALYZE url_alias;
 {% endhighlight %}
 
 After this small change, the ILIKE selects dropped from 200-300ms to 20-30ms. As a mate said it was like magic. The Drupal instance became what you expect from a customized web app. Not as fast as Google, but almost all pages load under a second, and the slower ones are usually under 2.5s.
